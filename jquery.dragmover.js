@@ -139,13 +139,29 @@
     _set_active_item: function($item, e){
       var _this = this;
 
+      var item = $item.get(0);
+      var item_width = $item.outerWidth();
+      var item_height = $item.outerHeight();
+      var default_style = null;
+
+      if(item.currentStyle){
+        default_style = item.currentStyle;
+        item_width = default_style.width ? item.currentStyle.width : item_width;
+        item_height = default_style.height ? item.currentStyle.height : item_height;
+
+      }else if(getComputedStyle){
+        default_style = document.defaultView.getComputedStyle(item, "");
+        item_width = default_style.getPropertyValue("width") ? default_style.getPropertyValue("width") : item_width;
+        item_height = default_style.getPropertyValue("height") ? default_style.getPropertyValue("height") : item_height;
+      }
+
       _this._set_current_data($item.index(), e);
       _this._set_center_coord($item);
 
       _this.clone_item = $item.clone()
         .removeClass("orig-mover")
         .addClass("clone-mover")
-        .css({width: $item.outerWidth(), height: $item.outerHeight()});
+        .css({width: item_width, height: item_height});
 
       _this._set_item($item, {
         addClass: "active-mover",

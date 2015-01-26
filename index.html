@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta name="viewport" content="width=device-width">
+<title>jQuery.dragmover.js</title>
+<link rel="stylesheet" href="jquery.dragmover.css">
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  .wrapper {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  #drag_field {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  #drag_field li {
+    list-style: none;
+    float: left;
+    width: 20%;
+    margin: 0;
+    padding: 0 10px 10px;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 0 0 5px #fff;
+  }
+
+  #drag_field li img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+  }
+</style>
+<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="jquery.dragmover.js"></script>
+<script>
+  jQuery(function($){
+    $.dragmover($("#drag_field"), {
+      drag_item: "li"
+    });
+  });
+</script>
+</head>
+<body>
+<div class="wrapper">
+  <ul id="drag_field">
+    <li><img src="mark.png" alt=""><br>No: 01</li>
+    <li><img src="mark.png" alt=""><br>No: 02</li>
+    <li><img src="mark.png" alt=""><br>No: 03</li>
+    <li><img src="mark.png" alt=""><br>No: 04</li>
+    <li><img src="mark.png" alt=""><br>No: 05</li>
+    <li><img src="mark.png" alt=""><br>No: 06</li>
+    <li><img src="mark.png" alt=""><br>No: 07</li>
+    <li><img src="mark.png" alt=""><br>No: 08</li>
+    <li><img src="mark.png" alt=""><br>No: 09</li>
+    <li><img src="mark.png" alt=""><br>No: 10</li>
+    <li><img src="mark.png" alt=""><br>No: 11</li>
+    <li><img src="mark.png" alt=""><br>No: 12</li>
+    <li><img src="mark.png" alt=""><br>No: 13</li>
+    <li><img src="mark.png" alt=""><br>No: 14</li>
+    <li><img src="mark.png" alt=""><br>No: 15</li>
+    <li><img src="mark.png" alt=""><br>No: 16</li>
+    <li><img src="mark.png" alt=""><br>No: 17</li>
+    <li><img src="mark.png" alt=""><br>No: 18</li>
+    <li><img src="mark.png" alt=""><br>No: 19</li>
+    <li><img src="mark.png" alt=""><br>No: 20</li>
+    <li><img src="mark.png" alt=""><br>No: 21</li>
+    <li><img src="mark.png" alt=""><br>No: 22</li>
+    <li><img src="mark.png" alt=""><br>No: 23</li>
+    <li><img src="mark.png" alt=""><br>No: 24</li>
+    <li><img src="mark.png" alt=""><br>No: 25</li>
+    <li><img src="mark.png" alt=""><br>No: 26</li>
+    <li><img src="mark.png" alt=""><br>No: 27</li>
+    <li><img src="mark.png" alt=""><br>No: 28</li>
+    <li><img src="mark.png" alt=""><br>No: 29</li>
+    <li><img src="mark.png" alt=""><br>No: 30</li>
+    <li><img src="mark.png" alt=""><br>No: 31</li>
+    <li><img src="mark.png" alt=""><br>No: 32</li>
+    <li><img src="mark.png" alt=""><br>No: 33</li>
+    <li><img src="mark.png" alt=""><br>No: 34</li>
+    <li><img src="mark.png" alt=""><br>No: 35</li>
+    <li><img src="mark.png" alt=""><br>No: 36</li>
+    <li><img src="mark.png" alt=""><br>No: 37</li>
+    <li><img src="mark.png" alt=""><br>No: 38</li>
+    <li><img src="mark.png" alt=""><br>No: 39</li>
+    <li><img src="mark.png" alt=""><br>No: 40</li>
+    <li><img src="mark.png" alt=""><br>No: 41</li>
+    <li><img src="mark.png" alt=""><br>No: 42</li>
+    <li><img src="mark.png" alt=""><br>No: 43</li>
+    <li><img src="mark.png" alt=""><br>No: 44</li>
+    <li><img src="mark.png" alt=""><br>No: 45</li>
+    <li><img src="mark.png" alt=""><br>No: 46</li>
+    <li><img src="mark.png" alt=""><br>No: 47</li>
+    <li><img src="mark.png" alt=""><br>No: 48</li>
+    <li><img src="mark.png" alt=""><br>No: 49</li>
+    <li><img src="mark.png" alt=""><br>No: 50</li>
+    <li><img src="mark.png" alt=""><br>No: 51</li>
+    <li><img src="mark.png" alt=""><br>No: 52</li>
+    <li><img src="mark.png" alt=""><br>No: 53</li>
+    <li><img src="mark.png" alt=""><br>No: 54</li>
+    <li><img src="mark.png" alt=""><br>No: 55</li>
+    <li><img src="mark.png" alt=""><br>No: 56</li>
+    <li><img src="mark.png" alt=""><br>No: 57</li>
+    <li><img src="mark.png" alt=""><br>No: 58</li>
+    <li><img src="mark.png" alt=""><br>No: 59</li>
+    <li><img src="mark.png" alt=""><br>No: 60</li>
+    <li><img src="mark.png" alt=""><br>No: 61</li>
+    <li><img src="mark.png" alt=""><br>No: 62</li>
+    <li><img src="mark.png" alt=""><br>No: 63</li>
+    <li><img src="mark.png" alt=""><br>No: 64</li>
+    <li><img src="mark.png" alt=""><br>No: 65</li>
+    <li><img src="mark.png" alt=""><br>No: 66</li>
+    <li><img src="mark.png" alt=""><br>No: 67</li>
+    <li><img src="mark.png" alt=""><br>No: 68</li>
+    <li><img src="mark.png" alt=""><br>No: 69</li>
+    <li><img src="mark.png" alt=""><br>No: 70</li>
+    <li><img src="mark.png" alt=""><br>No: 71</li>
+    <li><img src="mark.png" alt=""><br>No: 72</li>
+    <li><img src="mark.png" alt=""><br>No: 73</li>
+    <li><img src="mark.png" alt=""><br>No: 74</li>
+    <li><img src="mark.png" alt=""><br>No: 75</li>
+    <li><img src="mark.png" alt=""><br>No: 76</li>
+    <li><img src="mark.png" alt=""><br>No: 77</li>
+    <li><img src="mark.png" alt=""><br>No: 78</li>
+    <li><img src="mark.png" alt=""><br>No: 79</li>
+    <li><img src="mark.png" alt=""><br>No: 80</li>
+    <li><img src="mark.png" alt=""><br>No: 81</li>
+    <li><img src="mark.png" alt=""><br>No: 82</li>
+    <li><img src="mark.png" alt=""><br>No: 83</li>
+    <li><img src="mark.png" alt=""><br>No: 84</li>
+    <li><img src="mark.png" alt=""><br>No: 85</li>
+    <li><img src="mark.png" alt=""><br>No: 86</li>
+    <li><img src="mark.png" alt=""><br>No: 87</li>
+    <li><img src="mark.png" alt=""><br>No: 88</li>
+    <li><img src="mark.png" alt=""><br>No: 89</li>
+    <li><img src="mark.png" alt=""><br>No: 90</li>
+    <li><img src="mark.png" alt=""><br>No: 91</li>
+    <li><img src="mark.png" alt=""><br>No: 92</li>
+    <li><img src="mark.png" alt=""><br>No: 93</li>
+    <li><img src="mark.png" alt=""><br>No: 94</li>
+    <li><img src="mark.png" alt=""><br>No: 95</li>
+    <li><img src="mark.png" alt=""><br>No: 96</li>
+    <li><img src="mark.png" alt=""><br>No: 97</li>
+    <li><img src="mark.png" alt=""><br>No: 98</li>
+    <li><img src="mark.png" alt=""><br>No: 99</li>
+    <li><img src="mark.png" alt=""><br>No: 100</li>
+    <li><img src="mark.png" alt=""><br>No: 101</li>
+    <li><img src="mark.png" alt=""><br>No: 102</li>
+    <li><img src="mark.png" alt=""><br>No: 103</li>
+    <li><img src="mark.png" alt=""><br>No: 104</li>
+    <li><img src="mark.png" alt=""><br>No: 105</li>
+    <li><img src="mark.png" alt=""><br>No: 106</li>
+    <li><img src="mark.png" alt=""><br>No: 107</li>
+    <li><img src="mark.png" alt=""><br>No: 108</li>
+    <li><img src="mark.png" alt=""><br>No: 109</li>
+    <li><img src="mark.png" alt=""><br>No: 110</li>
+    <li><img src="mark.png" alt=""><br>No: 111</li>
+    <li><img src="mark.png" alt=""><br>No: 112</li>
+    <li><img src="mark.png" alt=""><br>No: 113</li>
+    <li><img src="mark.png" alt=""><br>No: 114</li>
+    <li><img src="mark.png" alt=""><br>No: 115</li>
+    <li><img src="mark.png" alt=""><br>No: 116</li>
+    <li><img src="mark.png" alt=""><br>No: 117</li>
+    <li><img src="mark.png" alt=""><br>No: 118</li>
+    <li><img src="mark.png" alt=""><br>No: 119</li>
+    <li><img src="mark.png" alt=""><br>No: 120</li>
+    <li><img src="mark.png" alt=""><br>No: 121</li>
+    <li><img src="mark.png" alt=""><br>No: 122</li>
+    <li><img src="mark.png" alt=""><br>No: 123</li>
+    <li><img src="mark.png" alt=""><br>No: 124</li>
+    <li><img src="mark.png" alt=""><br>No: 125</li>
+    <li><img src="mark.png" alt=""><br>No: 126</li>
+    <li><img src="mark.png" alt=""><br>No: 127</li>
+    <li><img src="mark.png" alt=""><br>No: 128</li>
+    <li><img src="mark.png" alt=""><br>No: 129</li>
+    <li><img src="mark.png" alt=""><br>No: 130</li>
+    <li><img src="mark.png" alt=""><br>No: 131</li>
+    <li><img src="mark.png" alt=""><br>No: 132</li>
+    <li><img src="mark.png" alt=""><br>No: 133</li>
+    <li><img src="mark.png" alt=""><br>No: 134</li>
+    <li><img src="mark.png" alt=""><br>No: 135</li>
+    <li><img src="mark.png" alt=""><br>No: 136</li>
+    <li><img src="mark.png" alt=""><br>No: 137</li>
+    <li><img src="mark.png" alt=""><br>No: 138</li>
+    <li><img src="mark.png" alt=""><br>No: 139</li>
+    <li><img src="mark.png" alt=""><br>No: 140</li>
+  </ul>
+</div>
+</body>
+</html>
